@@ -9,6 +9,9 @@ html {
   @media (max-width: 62em) {
     html {
       font-size: 50%; } }
+  @media (max-width: 48em) {
+    html {
+      font-size: 45%; } }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -60,7 +63,7 @@ body {
     background-position: center; }
 
 .header__top {
-  height: 9rem; }
+  min-height: 9rem; }
 
 .header__nav-item {
   text-decoration: none;
@@ -82,7 +85,7 @@ body {
   border-radius: 50%; }
 
 .header__bottom {
-  height: 5.8rem; }
+  min-height: 5.8rem; }
   .header__bottom--nav {
     font-size: 1.1rem;
     color: #b8bfd3;
@@ -111,6 +114,9 @@ body {
     @media (max-width: 62em) {
       .products__list {
         margin-left: -5rem; } }
+    @media (max-width: 48em) {
+      .products__list {
+        margin-left: -5.5rem; } }
     .products__list--sub {
       background-color: #f0f2f7; }
     .products__list--item {
@@ -125,10 +131,7 @@ body {
   .products__pages {
     height: 9rem;
     background-color: #fff;
-    border-radius: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 80%; }
+    border-radius: 5px; }
     .products__pages--num {
       display: flex;
       align-items: center;
