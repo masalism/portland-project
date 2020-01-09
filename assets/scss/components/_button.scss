@@ -1,0 +1,26 @@
+.my-btn {
+    width: 11rem;
+    height: 3.2rem;
+    background-color: white;
+    border: 1px solid $color-text-grey;
+    font-size: 1.1rem;
+    color: $color-black;
+    font-weight: 500;
+
+    &__left {
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-right: none;
+    }
+
+    &__right {
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    &__round {
+        border-radius: 30px;
+        width: 8.2rem;
+    }
+
+}

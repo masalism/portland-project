@@ -1,0 +1,56 @@
+.header {
+    &__top {
+        height: 9rem;
+    }
+
+    &__nav-item {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $color-black;
+        font-weight: 500;
+    }
+
+    &__cart {
+        font-size: 1.4rem;
+    }
+
+    &__num {
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        background-color: $color-text-grey;
+        border-radius: 50%;
+    }
+
+    &__bottom {
+        height: 5.8rem;
+        &--nav {
+            font-size: 1.1rem;
+            color: $color-text-grey;
+            text-decoration: none;
+            font-weight: 500;
+
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+
+            &--active {
+                color: $color-black;
+            }
+        }
+    }
+
+    &__form {
+        font-size: 1.4rem;
+     
+        &--search {
+            border: 0;
+            outline: 0;
+        }
+    }
+
+    
+}

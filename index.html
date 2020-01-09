@@ -12,26 +12,375 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <div class="border-bottom">
+            <div class="container">
+                <div class="row header__top">
+                    <div class="col-2 d-flex justify-content-between align-items-center">
+                        <img src="assets/img/Menu Icon.png" alt="">
+                        <img src="assets/img/Portland.png" alt="">
+                    </div>
+                    <div class="offset-1 col-6 d-flex justify-content-between align-items-center">
+                        <a href="" class="header__nav-item">Home</a>
+                        <a href="" class="header__nav-item">Devices</a>
+                        <a href="" class="header__nav-item">Delivery & Payment</a>
+                        <a href="" class="header__nav-item">Guarantee</a>
+                        <a href="" class="header__nav-item">About Us</a>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end align-items-center">
+                        <i class="header__cart fas fa-shopping-cart"></i>
+                        <a href="" class="header__nav-item ml-3">CART</a>
+                        <span class="header__num ml-3">0</span>
+                        <button class="my-btn my-btn__round ml-5">SIGN IN</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container">
+            <div class="row header__bottom d-flex align-items-center">
+                <div class="col-6">
+                    <a href="#" class="header__bottom--nav">TOP SALES</a>
+                    <a href="#" class="header__bottom--nav">BRAND FOCUS</a>
+                    <a href="#" class="header__bottom--nav header__bottom--nav--active">HIGH TECH</a>
 
-    </header>\
-    <main>
-        <section class="container products">
+                    <a href="#" class="header__bottom--nav">BEST SELLERS</a>
+                    <a href="#" class="header__bottom--nav">PROJECTS</a>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                    <a href="#" class="header__bottom--nav">SUPPORTS</a>
+                    <i class="fas fa-search mr-3"></i>
+                    <form class="header__form">
+                        <input type="text" class="header__form--search" placeholder="I'm looking for" name="" id="">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="products pb-5">
+        <section class="container">
             <div class="row">
-                <div class="col-3 d-flex flex-column"></div>
-                <div class="col-9 d-flex">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="products-card d-flex justify-content-center">
-                                <img src="" alt="" class="img__products">
-                                <h3 class="heading-3">Apple TV 32GB</h3>
-                                <p class="products__color">Black</p>
-                                <p class="products__price">$49.99</p>
+                <div class="col-3 mt-5 w-100">
+                    <div class="products__right">
+                        <ul class="products__list">
+                            <li class="products__list--item d-flex justify-content-between align-items-center"><a
+                                    href="" class="products__list--link">Top Sales</a><i
+                                    class="fas fa-chevron-right"></i></li>
+                            <li class="products__list--item d-flex justify-content-between align-items-center"><a
+                                    href="" class="products__list--link">Brand Focus</a><i
+                                    class="fas fa-chevron-right"></i></li>
+                            <li class="products__list--item d-flex justify-content-between align-items-center"><a
+                                    href="" class="products__list--link">Hi-Tech</a><i class="fas fa-chevron-down"></i>
+                            </li>
+                            <li
+                                class="products__list--item d-flex justify-content-between align-items-center products__list--sub">
+                                <a href="" class="products__list--link">CELL PHONES</a>
+                            </li>
+                            <li
+                                class="products__list--item d-flex justify-content-between align-items-center products__list--sub">
+                                <a href="" class="products__list--link">CAMERAS</a>
+                            </li>
+                            <li
+                                class="products__list--item d-flex justify-content-between align-items-center products__list--sub">
+                                <a href="" class="products__list--link">COMPUTERS</a>
+                            </li>
+                            <li
+                                class="products__list--item d-flex justify-content-between align-items-center products__list--sub">
+                                <a href="" class="products__list--link">TV, AUDIO</a>
+                            </li>
+                            <li
+                                class="products__list--item d-flex justify-content-between align-items-center products__list--sub">
+                                <a href="" class="products__list--link">VIDEO GAMES</a>
+                            </li>
+                            <li class="products__list--item d-flex justify-content-between align-items-center"><a
+                                    href="" class="products__list--link">Home</a><i class="fas fa-chevron-right"></i>
+                            </li>
+                            <li class="products__list--item d-flex justify-content-between align-items-center"><a
+                                    href="" class="products__list--link">Sale</a><i class="fas fa-chevron-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="available mt-5">
+                        <p class="available__text">AVAILABLE</p>
+                        <div class="available__form">
+                            <div class="form-check d-flex justify-content-between mb-4">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label ml-2 available__form--label" for="exampleRadios1">
+                                    In Storage
+                                </label>
+                                <p class="text-right available__form--number align-self-center">45</p>
+                            </div>
+                            <div class="form-check d-flex justify-content-between">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label ml-2 available__form--label" for="exampleRadios2">
+                                    In Online-Shop
+                                </label>
+                                <p class="text-right available__form--number">12</p>
                             </div>
                         </div>
-                        <div class="col-4"></div>
-                        <div class="col-4"></div>
+                        <div class="d-flex justify-content-between align-items-center available__box">
+                            <p class="available__brands">BRANDS</p>
+                            <a href="#" class="available__see">SEE ALL</a>
+                        </div>
+                        <div class="available__form">
+                            <div class="form-check mb-4 d-flex justify-content-between">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label ml-2 available__form--label" for="defaultCheck1">
+                                    Apple
+                                </label>
+                                <p class="text-right available__form--number">32</p>
+                            </div>
+                            <div class="form-check mb-4 d-flex justify-content-between">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label ml-2 available__form--label" for="defaultCheck2">
+                                    JBL
+                                </label>
+                                <p class="text-right available__form--number">14</p>
+                            </div>
+                            <div class="form-check mb-4 d-flex justify-content-between">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label ml-2 available__form--label" for="defaultCheck3">
+                                    Bose
+                                </label>
+                                <p class="text-right available__form--number">3</p>
+                            </div>
+                            <div class="form-check d-flex justify-content-between">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label ml-2 available__form--label" for="defaultCheck4">
+                                    Nest
+                                </label>
+                                <p class="text-right available__form--number">5</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="available mt-5">
+                        <div class="d-flex justify-content-between align-items-center available__box">
+                            <p class="available__brands">BRANDS</p>
+                            <a href="#" class="available__see">SEE ALL</a>
+                        </div>
+                        <div class="available__form">
+                            <div class="form-check mb-4 d-flex justify-content-between">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label ml-2 available__form--label" for="defaultCheck1">
+                                    New
+                                </label>
+
+                            </div>
+                            <div class="form-check mb-4 d-flex justify-content-between">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label ml-2 available__form--label" for="defaultCheck2">
+                                    Manufacturer Refurbished
+                                </label>
+
+                            </div>
+                            <div class="form-check mb-4 d-flex justify-content-between">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label ml-2 available__form--label" for="defaultCheck3">
+                                    Seller Refurbished
+                                </label>
+
+                            </div>
+                            <div class="form-check mb-4 d-flex justify-content-between">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label ml-2 available__form--label" for="defaultCheck4">
+                                    Used
+                                </label>
+
+                            </div>
+                            <div class="form-check d-flex justify-content-between">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label ml-2 available__form--label" for="defaultCheck4">
+                                    For Parts or not Working
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="available mt-5">
+                        <p class="available__text">DELIVERY OPTIONS</p>
+                        <div class="d-flex align-items-center justify-content-between available__form">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label available__form--label" for="inlineRadio1">FREE</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label available__form--label mr-5"
+                                    for="inlineRadio2">$4.99</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-9">
+                    <div class="row w-100">
+                        <div class="col-4">
+                            <div class=" my-card d-flex flex-column align-items-center mt-5">
+                                <img src="assets/img/ihpone.jpg" alt="" class="my-card__img  mt-5">
+                                <div
+                                    class="my-card__body d-flex align-items-center flex-column justify-content-around mt-5 text-center">
+                                    <h3 class="my-card__name mt-2">Apple TV 32GB</h3>
+                                    <p class="my-card__color mt-2">BLACK</p>
+                                    <p class="my-card__price mt-2">
+                                        $49.99
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class=" my-card d-flex flex-column align-items-center mt-5">
+                                <img src="assets/img/watch.jpg" alt="" class="my-card__img  mt-5">
+                                <div
+                                    class="my-card__body d-flex align-items-center flex-column justify-content-around mt-5 text-center">
+                                    <h3 class="my-card__name mt-2">Pebble Time</h3>
+                                    <p class="my-card__color mt-2">RED</p>
+                                    <p class="my-card__price mt-2">
+                                        $29.99
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class=" my-card d-flex flex-column align-items-center mt-5">
+                                <img src="assets/img/Zendure_4-Port_USB.jpg" alt="" class="my-card__img  mt-5">
+                                <div
+                                    class="my-card__body d-flex align-items-center flex-column justify-content-around mt-5 text-center">
+                                    <h3 class="my-card__name mt-2">Zendure 4-Port USB</h3>
+                                    <p class="my-card__color mt-2">WHITE</p>
+                                    <p class="my-card__price mt-2">
+                                        $49.99
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class=" my-card d-flex flex-column align-items-center mt-5">
+                                <img src="assets/img/weight.jpg" alt="" class="my-card__img  mt-5">
+                                <div
+                                    class="my-card__body d-flex align-items-center flex-column justify-content-around mt-5 text-center">
+                                    <h3 class="my-card__name mt-2">Whitings Smart Body Analyzer ws-50</h3>
+                                    <p class="my-card__color mt-2">BLACK</p>
+                                    <p class="my-card__price mt-2">
+                                        $39.99
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class=" my-card d-flex flex-column align-items-center mt-5">
+                                <img src="assets/img/jbl.jpg" alt="" class="my-card__img--big">
+                                <div class="my-card__body mt-5 d-flex justify-content-between w-100">
+                                    <div class="">
+                                        <h3 class="ml-4 my-card__name mt-1">JBLCharge 2+</h3>
+                                        <p class="ml-4 mt-2 my-card__color mt-1">BLACK</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <button class=" my-btn my-btn__left">16 GB</button>
+                                        <button class="mr-4 my-btn my-btn__right">BUY NOW</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class=" my-card d-flex flex-column align-items-center mt-5">
+                                <img src="assets/img/Photo.jpg" alt="" class="my-card__img  mt-5">
+                                <div
+                                    class="my-card__body d-flex align-items-center flex-column justify-content-around mt-5 text-center">
+                                    <h3 class="my-card__name mt-2">Olio Clip New</h3>
+                                    <p class="my-card__color mt-2">Silver</p>
+                                    <p class="my-card__price mt-2">
+                                        $19.99
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class=" my-card d-flex flex-column align-items-center mt-5">
+                                <img src="assets/img/watch1.jpg" alt="" class="my-card__img  mt-5">
+                                <div
+                                    class="my-card__body d-flex align-items-center flex-column justify-content-around mt-5 text-center">
+                                    <h3 class="my-card__name mt-2">Fitbit Charge Hr heart Rate and activity tracker</h3>
+                                    <p class="my-card__color mt-2">BLACK</p>
+                                    <p class="my-card__price mt-2">
+                                        $19.99
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class=" my-card d-flex flex-column align-items-center mt-5">
+                                <img src="assets/img/watch2.jpg" alt="" class="my-card__img  mt-5">
+                                <div
+                                    class="my-card__body d-flex align-items-center flex-column justify-content-around mt-5 text-center">
+                                    <h3 class="my-card__name mt-2">Apple Watch Sport 38mm silver</h3>
+                                    <p class="my-card__color mt-2">White</p>
+                                    <p class="my-card__price mt-2">
+                                        $49.99
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class=" my-card d-flex flex-column align-items-center mt-5">
+                                <img src="assets/img/bose.jpg" alt="" class="my-card__img  mt-5">
+                                <div
+                                    class="my-card__body d-flex align-items-center flex-column justify-content-around mt-5 text-center">
+                                    <h3 class="my-card__name mt-2">Bose SoundLink On-Ear Headphones</h3>
+                                    <p class="my-card__color mt-2">White</p>
+                                    <p class="my-card__price mt-2">
+                                        $119.99
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class=" my-card d-flex flex-column align-items-center mt-5">
+                                <img src="assets/img/soncs.jpg" alt="" class="my-card__img  mt-5">
+                                <div
+                                    class="my-card__body d-flex align-items-center flex-column justify-content-around mt-5 text-center">
+                                    <h3 class="my-card__name mt-2">Sonos Play-1 Wireless HiFi System</h3>
+                                    <p class="my-card__color mt-2">BLACK</p>
+                                    <p class="my-card__price mt-2">
+                                        $99.99
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="my-card my-card__bg d-flex flex-column align-items-center mt-5 text-center">
+                                <h3 class="my-card__name mt-5">Nest Learning Thermostat, 3rd Generation</h3>
+                                <p class="my-card__price--2 mt-2">
+                                    $49.99
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 
+                        <div class="col-4"></div>
+                        <div class="col-4"></div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 products__pages mt-5 d-flex align-items-center  justify-content-around">
+                    <i class="fas fa-chevron-left"></i>
+                    <div class="d-flex justify-content-around w-25">
+                        <a href="" class="products__pages--num">1</a>
+                        <a href="" class="products__pages--num">2</a>
+                        <a href="" class="products__pages--num">3</a>
+                        <a href="" class="products__pages--num products__pages--active">4</a>
+                        <a href="" class="products__pages--num">5</a>
+                        <a href="" class="products__pages--num">6</a>
+                        <a href="" class="products__pages--num">7</a>
+                        <a href="" class="products__pages--num">8</a>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                    
+
                 </div>
             </div>
         </section>
