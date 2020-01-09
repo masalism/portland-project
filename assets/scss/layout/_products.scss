@@ -12,6 +12,9 @@
         margin-left: -4rem;
         // display: block;
         list-style: none;
+        @include respond(lg) {
+            margin-left: -5rem;
+        }
         &--sub {
             background-color: #f0f2f7;
         }

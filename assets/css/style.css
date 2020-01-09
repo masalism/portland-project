@@ -6,6 +6,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media (max-width: 62em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -32,7 +35,7 @@ body {
 
 .my-card {
   width: 100%;
-  height: 38rem;
+  min-height: 38rem;
   background: white;
   border-radius: 5px; }
   .my-card__img {
@@ -105,6 +108,9 @@ body {
   .products__list {
     margin-left: -4rem;
     list-style: none; }
+    @media (max-width: 62em) {
+      .products__list {
+        margin-left: -5rem; } }
     .products__list--sub {
       background-color: #f0f2f7; }
     .products__list--item {
