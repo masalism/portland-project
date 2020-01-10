@@ -16,18 +16,21 @@
         <div class="border-bottom">
             <div class="container">
                 <div class="row header__top">
-                    <div class="col-md-2 justify-content-around d-flex justify-content-md-between align-items-center my-4 my-md-0">
+                    <div
+                        class="col-lg-2 d-flex justify-content-between align-items-center my-4 my-lg-0">
                         <img src="assets/img/Menu Icon.png" alt="">
-                        <img src="assets/img/Portland.png" alt="">
+                        <img src="assets/img/Portland.svg" alt="">
                     </div>
-                    <div class="offset-md-1 col-md-6  d-flex justify-content-md-between align-items-center justify-content-center my-4 my-md-0">
+                    <div
+                        class="offset-md-1 col-md-6 d-none d-lg-flex justify-content-lg-between align-items-center justify-content-center my-4 my-md-0">
                         <a href="" class="header__nav-item mr-5 mr-md-2 mr-lg-1">Home</a>
                         <a href="" class="header__nav-item mr-5 mr-md-2 mr-lg-1">Devices</a>
                         <a href="" class="header__nav-item mr-5 mr-md-2 mr-lg-1">Delivery & Payment</a>
                         <a href="" class="header__nav-item mr-5 mr-md-2 mr-lg-1">Guarantee</a>
                         <a href="" class="header__nav-item">About Us</a>
                     </div>
-                    <div class="col-md-3 justify-content-center d-flex justify-content-md-end align-items-center my-4 my-md-0">
+                    <div
+                        class="col-md-3 justify-content-center d-none d-lg-flex justify-content-lg-end align-items-center my-4 my-md-0">
                         <i class="header__cart fas fa-shopping-cart"></i>
                         <a href="" class="header__nav-item ml-3">CART</a>
                         <span class="header__num ml-3">0</span>
@@ -35,10 +38,10 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <div class="container">
-            <div class="row header__bottom d-flex align-items-center">
+            <div class="row header__bottom d-none d-lg-flex align-items-center">
                 <div class="col-lg-6 d-flex justify-content-center justify-content-lg-start">
                     <a href="#" class="header__bottom--nav">TOP SALES</a>
                     <a href="#" class="header__bottom--nav">BRAND FOCUS</a>
@@ -57,7 +60,99 @@
             </div>
         </div>
     </header>
-    <main class="products pb-5">
+    <main class="main pb-5">
+        <section class="my-slider">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel container my-slider">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active my-slider__box--2 ">
+                        <div class="container my-slider__padding">
+                            <div class="row">
+                                <div class="col-md-6 col-8">
+                                    <h1 class="heading-1 text-white mb-lg-5 mb-2">iPhone 6 32 Gb Black</h1>
+                                    <p class="text-white my-slider__text mb-lg-5 mb-2">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reiciendis esse
+                                        consequuntur perspiciatis minus id! Culpa ex totam, officiis modi iste magni
+                                        saepe quasi
+                                        vel quo alias delectus suscipit. Perspiciatis?
+                                    </p>
+                                    <button class="my-btn my-btn__blue mt-4 text-white">BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item my-slider__box">
+                        <div class="container my-slider__padding">
+                            <div class="row">
+                                <div class="col-md-6 col-8">
+                                    <h1 class="heading-1 text-white mb-5">Apple Watch</h1>
+                                    <p class="text-white my-slider__text mb-5">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reiciendis esse
+                                        consequuntur perspiciatis minus id! Culpa ex totam, officiis modi iste magni
+                                        saepe quasi
+                                        vel quo alias delectus suscipit. Perspiciatis?
+                                    </p>
+                                    <button class="my-btn my-btn__blue mt-4 text-white">BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item my-slider__box--3">
+                        <div class="container my-slider__padding">
+                            <div class="row">
+                                <div class="col-md-6 col-8">
+                                    <h1 class="heading-1 text-white mb-5">Macbook Pro</h1>
+                                    <p class="text-white my-slider__text mb-5">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reiciendis esse
+                                        consequuntur perspiciatis minus id! Culpa ex totam, officiis modi iste magni
+                                        saepe quasi
+                                        vel quo alias delectus suscipit. Perspiciatis?
+                                    </p>
+                                    <button class="my-btn my-btn__blue mt-4 text-white">BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="filter container d-none d-lg-flex justify-content-between w-100 mt-5">
+            <div class="filter__left d-flex justify-content-between align-items-center">
+                <p class="filter__text">SORT BY</p>
+                <button class="btn__filter">BEST MATCH <i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="filter__center d-flex justify-content-between align-items-center">
+                <form action="">
+                    <label for="key" class="filter__text">KEYWORDS </label>
+                    <input class="filter__input mr-5" type="text" name="key" placeholder="Search">
+                    <label for="price" class="filter__text">PRICE </label>
+                    <input class="filter__input filter__input--price" type="text" name="Price" placeholder="FROM">
+                    <span> - </span>
+                    <input class="filter__input filter__input--price" type="text" name="" placeholder="TOO">
+                    <input class="ml-5" type="radio" name="radio">
+                    <label class="filter__text" for="radio">Free Shipping</label>
+                </form>
+            </div>
+            <div class="filter__right d-flex justify-content-between align-items-center">
+                <p class="filter__text ">SHIP TO:</p>
+                <button class="btn__filter">USA <i class="fas fa-chevron-down"></i></button>
+            </div>
+        </section>
+
+
         <section class="container">
             <div class="row">
                 <div class="col-md-3 mt-5 w-100">
@@ -379,7 +474,7 @@
                         <a href="" class="products__pages--num">8</a>
                     </div>
                     <i class="fas fa-chevron-right"></i>
-                    
+
 
                 </div>
             </div>

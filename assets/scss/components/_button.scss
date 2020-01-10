@@ -7,6 +7,13 @@
     color: $color-black;
     font-weight: 500;
 
+    &__blue {
+        width: 16rem;
+        border-radius: 30px;
+        background-color: $color-blue;
+        border: 0;
+    }
+
     &__left {
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
@@ -22,5 +29,13 @@
         border-radius: 30px;
         width: 8.2rem;
     }
-
+    
+}
+.btn__filter {
+    border: 0;
+    background: none;
+    font-size: 1.1rem;
+    color: $color-black;
+    font-weight: 500;
+    cursor: pointer;
 }

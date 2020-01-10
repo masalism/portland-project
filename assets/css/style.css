@@ -17,6 +17,13 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
 
+.main {
+  background-color: #e4e5e7; }
+
+.heading-1 {
+  font-size: 4.2rem;
+  font-weight: 600; }
+
 .my-btn {
   width: 11rem;
   height: 3.2rem;
@@ -25,6 +32,11 @@ body {
   font-size: 1.1rem;
   color: #1c1e23;
   font-weight: 500; }
+  .my-btn__blue {
+    width: 16rem;
+    border-radius: 30px;
+    background-color: #2754eb;
+    border: 0; }
   .my-btn__left {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -36,6 +48,14 @@ body {
     border-radius: 30px;
     width: 8.2rem; }
 
+.btn__filter {
+  border: 0;
+  background: none;
+  font-size: 1.1rem;
+  color: #1c1e23;
+  font-weight: 500;
+  cursor: pointer; }
+
 .my-card {
   width: 100%;
   min-height: 38rem;
@@ -43,6 +63,9 @@ body {
   border-radius: 5px; }
   .my-card__img {
     width: 80%; }
+    @media (max-width: 48em) {
+      .my-card__img {
+        width: 60%; } }
     .my-card__img--big {
       width: 100%;
       border-radius: 5px; }
@@ -61,6 +84,62 @@ body {
     background-image: url("/assets/img/backgound.jpg");
     background-size: cover;
     background-position: center; }
+
+.my-slider__box {
+  background-image: url("/assets/img/applew.jpg");
+  background-size: cover;
+  height: 50rem; }
+
+.my-slider__box--2 {
+  background-image: url("/assets/img/iphone 6.png");
+  background-size: cover;
+  background-position: center;
+  height: 50rem; }
+
+.my-slider__box--3 {
+  background-image: url("/assets/img/macbook.jpg");
+  background-size: cover;
+  height: 50rem; }
+
+.my-slider__padding {
+  padding-top: 10rem;
+  padding-left: 10rem; }
+  @media (max-width: 48em) {
+    .my-slider__padding {
+      padding-top: 7rem; } }
+
+.my-slider__text {
+  font-size: 1.6rem; }
+  @media (max-width: 48em) {
+    .my-slider__text {
+      font-size: 1.5rem; } }
+
+.filter {
+  background: white;
+  border-radius: 5px;
+  min-height: 5.8rem; }
+  .filter__left {
+    width: 18%;
+    padding-right: 2rem;
+    border-right: 1px solid #b8bfd3; }
+  .filter__right {
+    width: 18%;
+    padding-left: 2rem;
+    border-left: 1px solid #b8bfd3; }
+  .filter__text {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #b8bfd3;
+    letter-spacing: 1.1px; }
+  .filter__input {
+    background-color: #e4e5e7;
+    border: 1px solid #b8bfd3;
+    border-radius: 30px;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.3rem;
+    color: #1c1e23; }
+    .filter__input--price {
+      width: 7rem; }
 
 .header__top {
   min-height: 9rem; }

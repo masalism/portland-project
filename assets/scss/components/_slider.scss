@@ -1,0 +1,38 @@
+.my-slider {
+    &__box {
+        background-image: url('/assets/img/applew.jpg');
+        background-size: cover;
+        height: 50rem;
+    }
+    &__box--2 {
+        background-image: url('/assets/img/iphone\ 6.png');
+        background-size: cover;
+        background-position: center;
+        height: 50rem;
+
+    }
+    &__box--3 {
+        background-image: url('/assets/img/macbook.jpg');
+        background-size: cover;
+        height: 50rem;
+    }
+
+    &__padding {
+        padding-top: 10rem;
+        padding-left: 10rem;
+        @include respond(md) {
+            padding-top: 7rem;
+        }
+        // @include respond(sm) {
+        //     padding-top: 2rem;
+        //     padding-left: 2rem;
+        // }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        @include respond(md) {
+            font-size: 1.5rem;
+        }
+    }
+}

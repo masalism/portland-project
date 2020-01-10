@@ -1,0 +1,39 @@
+.filter {
+    background: white;
+    border-radius: 5px;
+    min-height: 5.8rem;
+    &__left {
+        width: 18%;  
+        padding-right: 2rem;
+        border-right: 1px solid $color-text-grey;     
+    }
+
+    &__center {
+
+    }
+
+    &__right {
+        width: 18%;
+        padding-left: 2rem;
+        border-left: 1px solid $color-text-grey;     
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $color-text-grey;
+        letter-spacing: 1.1px;
+    }
+
+    &__input {
+        background-color: $color-back;
+        border: 1px solid $color-text-grey;
+        border-radius: 30px;
+        padding: 0.2rem 0.5rem;
+        font-size: 1.3rem;
+        color: $color-black;
+        &--price {
+            width: 7rem;
+        }
+    }
+}
